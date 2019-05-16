@@ -16,7 +16,7 @@ public class JsonOpener extends ReadLines{
 	/**
 	 * The String that correspond to the default path of JSON trace
 	 */
-	private static final String defaultJsonTracePath = System.getProperty("user.dir") + "\\trace\\";
+	private static final String defaultJsonTracePath = System.getProperty("user.dir") + "/trace/";
 
 	/**
 	 * Instantiate ReadLines processor which this class extends
