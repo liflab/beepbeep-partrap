@@ -24,14 +24,8 @@ public class EqualsJsonString extends BinaryFunction<JsonElement, String, Boolea
 		if(arg0 instanceof JsonNull) {
 			return false;
 		}
-		
-		//We remove: " " at the beginning and at the and of JsonElement
-		String jsonValue = ((JsonString)arg0).toString();
-		jsonValue =  jsonValue.substring(1, jsonValue.length()-1);
-		
 		//We make the comparison
-		System.out.println("Compare: " + jsonValue + " and " + arg1);
-		return arg1.equals(((JsonString)arg0).toString());
+		return arg1.equals(((JsonString)arg0).stringValue());
 	}
 
 }

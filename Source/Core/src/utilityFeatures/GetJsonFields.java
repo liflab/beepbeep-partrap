@@ -5,8 +5,6 @@ import ca.uqac.lif.json.JsonElement;
 import ca.uqac.lif.json.JsonMap;
 import ca.uqac.lif.json.JsonNull;
 
-
-
 /**
  * This class allow to get fields in JsonElement (meaning a JsonMap), it return a JsonElement in output
  * @author Helloïs BARBOSA
