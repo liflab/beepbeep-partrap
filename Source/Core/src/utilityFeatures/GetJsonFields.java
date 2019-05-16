@@ -42,6 +42,11 @@ public class GetJsonFields extends UnaryFunction<JsonElement, JsonElement>{
 	 */
 	public static final String JK_ID = "id";
 	
+	/**
+	 * The JSON key correspond to v1 fields in JSON trace (meaning temperature)
+	 */
+	public static final String JK_TEMP ="v1";
+	
 
 	/**
 	 * Instantiate a new UnaryFunction
