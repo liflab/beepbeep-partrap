@@ -11,7 +11,7 @@ public class HipDistance extends GroupProcessor {
     public HipDistance() {
         super(1,1);
 
-      //  getId = new ApplyFunction( new GetJsonFields(GetJsonFields.))
+        getId = new ApplyFunction( new GetJsonFields(GetJsonFields.))
 
 
 

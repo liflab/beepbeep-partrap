@@ -11,20 +11,15 @@ public class Main {
         ParseFileToJson myParser = new ParseFileToJson("long_trace.json");
 
         HipDistance prop = new HipDistance();
-        /*Connector.connect(myParser, prop);
+        Connector.connect(myParser, prop);
 
         Pump myPump = new Pump(0);
         Connector.connect( prop, myPump);
 
         Print p = new Print().setSeparator("\n\n");
         Connector.connect(myPump, p);
-        myPump.run();*/
+        myPump.run();
 
-        Pump testPump = new Pump(0);
-        Connector.connect(myParser, testPump);
-        Print p = new Print().setSeparator("\n\n");
-        Connector.connect(testPump, p);
-        testPump.run();
 
 
     }
