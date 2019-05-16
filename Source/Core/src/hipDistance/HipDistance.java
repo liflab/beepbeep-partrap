@@ -6,12 +6,14 @@ import utilityFeatures.GetJsonFields;
 
 public class HipDistance extends GroupProcessor {
 
-    private ApplyFunction getId;
+    private ApplyFunction m_getId;
+
+    private int maxDistance = 4;
 
     public HipDistance() {
         super(1,1);
 
-        getId = new ApplyFunction( new GetJsonFields(GetJsonFields.))
+        m_getId = new ApplyFunction( new GetJsonFields(GetJsonFields.JK_ID));
 
 
 

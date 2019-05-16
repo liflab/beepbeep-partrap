@@ -7,7 +7,7 @@ import ca.uqac.lif.json.JsonNull;
 
 /**
  * This class allow to get fields in JsonElement (meaning a JsonMap), it return a JsonElement in output
- * @author Helloïs BARBOSA
+ * @author Helloï¿½s BARBOSA
  *
  */
 public class GetJsonFields extends UnaryFunction<JsonElement, JsonElement>{
@@ -46,7 +46,6 @@ public class GetJsonFields extends UnaryFunction<JsonElement, JsonElement>{
 	 * The JSON key correspond to v1 fields in JSON trace (meaning temperature)
 	 */
 	public static final String JK_TEMP ="v1";
-	
 
 	/**
 	 * Instantiate a new UnaryFunction
