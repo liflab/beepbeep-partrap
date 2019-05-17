@@ -5,6 +5,8 @@ import ca.uqac.lif.cep.io.Print;
 import ca.uqac.lif.cep.tmf.Filter;
 import ca.uqac.lif.cep.tmf.Fork;
 import ca.uqac.lif.cep.tmf.Pump;
+import ca.uqac.lif.cep.tmf.Trim;
+import customProcessors.distanceCalculator;
 import utilityFeatures.EqualsJsonString;
 import utilityFeatures.GetJsonFields;
 import utilityFeatures.ParseFileToJson;
@@ -32,12 +34,25 @@ public class Main {
 
 
         Filter baseFilter = new Filter();
-        Connector.connect(baseFork,1,baseFilter,0);
-        Connector.connect(equalId,0, baseFilter,1);
+        Connector.connect(baseFork, 1, baseFilter, 0);
+        Connector.connect(equalId, 0, baseFilter, 1);
 
-         Pump myPump = new Pump(0);
+        //property coding starts here
 
-        Connector.connect(baseFilter, myPump);
+        Fork propertyFork = new Fork(2);
+        Connector.connect(baseFilter, propertyFork);
+
+        Trim trim = new Trim(1);
+        Connector.connect(propertyFork, 0, trim, 0);
+
+        distanceCalculator myCalculator = new distanceCalculator();
+        Connector.connect(trim, myCalculator);
+        Connector.connect(propertyFork, 1, myCalculator, 1);
+
+
+        Pump myPump = new Pump(0);
+
+        Connector.connect(myCalculator, myPump);
         Connector.connect(myPump, p);
         myPump.run();
 
