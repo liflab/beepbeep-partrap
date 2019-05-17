@@ -47,6 +47,11 @@ public class GetJsonFields extends UnaryFunction<JsonElement, JsonElement>{
 	 */
 	public static final String JK_TEMP ="v1";
 	
+	/**
+	 * The JSON key correspond to point fields in JSON trace (meaning the coordinates of a point in 3D)
+	 */
+	public static final String JK_POINT ="point";
+	
 
 	/**
 	 * Instantiate a new UnaryFunction
