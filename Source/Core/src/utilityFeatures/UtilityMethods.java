@@ -11,6 +11,8 @@ public class UtilityMethods {
 	 * @param firstPoint
 	 * @param secondPoint
 	 * 						firstPoint & secondPoint are array of Float with in index 0: x position, in index 1: y position and in index 2: z position
+	 *
+	 * @return distance as a float
 	 * 
 	 */
 	public static Float distanceProcessing(Float[] firstPoint, Float[] secondPoint) {
