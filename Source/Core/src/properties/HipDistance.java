@@ -1,4 +1,4 @@
-package hipDistance;
+package properties;
 
 import ca.uqac.lif.cep.GroupProcessor;
 import ca.uqac.lif.cep.functions.ApplyFunction;
