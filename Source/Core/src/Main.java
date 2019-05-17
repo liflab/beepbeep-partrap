@@ -7,12 +7,14 @@ import ca.uqac.lif.cep.tmf.Filter;
 import ca.uqac.lif.cep.tmf.Fork;
 import ca.uqac.lif.cep.tmf.Pump;
 import ca.uqac.lif.cep.tmf.Trim;
+import ca.uqac.lif.cep.util.Numbers;
 import ca.uqac.lif.json.JsonElement;
 import ca.uqac.lif.json.JsonList;
 import ca.uqac.lif.json.JsonNumber;
 import utilityFeatures.EqualsJsonString;
 import utilityFeatures.GetJsonFields;
 import utilityFeatures.ParseFileToJson;
+import utilityFeatures.UtilityMethods;
 
 public class Main {
 
@@ -49,14 +51,21 @@ public class Main {
 
 
         Trim myTrim = new Trim(1);
-        Connector.connect()
+        Connector.connect(getPoint, myTrim);
 
+        ApplyFunction myFunct = new ApplyFunction(new CalculateDistance());
+        Connector.connect(myTrim, 0, myFunct, 1);
+        Connector.connect(baseFork, myFunct);
 
-        ApplyFunction myFunct = new ApplyFunction();
+        ApplyFunction smallerThan = new ApplyFunction(Numbers.isLessThan);
+        Connector.connect(myFunct, smallerThan);
+
+        ApplyFunction constant2 = new ApplyFunction(new Constant(0));
+        Connector.connect(constant2, 0, smallerThan, 1);
 
         Pump myPump = new Pump(0);
 
-        Connector.connect(firstParser, myPump);
+        Connector.connect(smallerThan, myPump);
         Connector.connect(myPump, p);
         myPump.run();
 
@@ -85,7 +94,8 @@ public class Main {
 
                 Float[] point1 = new Float[]{((JsonNumber) list1.get(0)).numberValue().floatValue(), ((JsonNumber) list1.get(1)).numberValue().floatValue(), ((JsonNumber) list1.get(2)).numberValue().floatValue()};
                 Float[] point2 = new Float[]{((JsonNumber) list2.get(0)).numberValue().floatValue(), ((JsonNumber) list2.get(1)).numberValue().floatValue(), ((JsonNumber) list2.get(2)).numberValue().floatValue()};
-
+                Float a = 0f;
+                return UtilityMethods.distanceProcessing(point1, point2);
             }
             return Float.valueOf(0);
         }
