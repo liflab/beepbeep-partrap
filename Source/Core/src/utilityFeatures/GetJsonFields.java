@@ -10,48 +10,48 @@ import ca.uqac.lif.json.JsonNull;
  *
  * @author Hello�s BARBOSA
  */
-public class GetJsonFields extends UnaryFunction<JsonElement, JsonElement> {
-
-    /**
-     * The JSON key field in by the developer
-     */
-    private String m_JsonKey;
-
-    /**
-     * The JSON key correspond to time fields in JSON trace
-     */
-    public static final String JK_TIME = "time";
-
-    /**
-     * The JSON key correspond to type fields in JSON trace
-     */
-    public static final String JK_TYPE = "type";
-
-    /**
-     * The JSON key correspond to types fields in JSON trace
-     */
-    public static final String JK_TYPES = "types";
-
-    /**
-     * The JSON key correspond to state fields in JSON trace
-     */
-    public static final String JK_STATE = "state";
-
-    /**
-     * The JSON key correspond to id fields in JSON trace
-     */
-    public static final String JK_ID = "id";
-
-    /**
-     * The JSON key correspond to v1 fields in JSON trace (meaning temperature)
-     */
-    public static final String JK_TEMP = "v1";
-
-
-    /**
-     * 3d point
-     */
-    public static final String JK_POINT = "point";
+public class GetJsonFields extends UnaryFunction<JsonElement, JsonElement>{
+	
+	/**
+	 * The JSON key field in by the developer
+	 */
+	private String m_JsonKey;
+	
+	/**
+	 * The JSON key correspond to time fields in JSON trace
+	 */
+	public static final String JK_TIME = "time";
+	
+	/**
+	 * The JSON key correspond to type fields in JSON trace
+	 */
+	public static final String JK_TYPE = "type";
+	
+	/**
+	 * The JSON key correspond to types fields in JSON trace
+	 */
+	public static final String JK_TYPES = "types";
+	
+	/**
+	 * The JSON key correspond to state fields in JSON trace
+	 */
+	public static final String JK_STATE = "state";
+	
+	/**
+	 * The JSON key correspond to id fields in JSON trace
+	 */
+	public static final String JK_ID = "id";
+	
+	/**
+	 * The JSON key correspond to v1 fields in JSON trace (meaning temperature)
+	 */
+	public static final String JK_TEMP ="v1";
+	
+	/**
+	 * The JSON key correspond to point fields in JSON trace (meaning the coordinates of a point in 3D)
+	 */
+	public static final String JK_POINT = "point";
+	
 
     /**
      * Instantiate a new UnaryFunction
