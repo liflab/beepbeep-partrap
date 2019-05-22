@@ -27,7 +27,7 @@ public class JsonOpener extends ReadLines{
 	 * 									Exception may be the thrown
 	 */
 	public JsonOpener(String JsonFileName) throws FileNotFoundException {
-		super((InputStream) new FileInputStream(defaultJsonTracePath + JsonFileName));
+		super(new FileInputStream(defaultJsonTracePath + JsonFileName));
 	}
 	
 }
