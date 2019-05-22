@@ -6,8 +6,8 @@ import ca.uqac.lif.cep.functions.ApplyFunction;
 import ca.uqac.lif.cep.functions.Constant;
 import ca.uqac.lif.cep.tmf.Fork;
 import ca.uqac.lif.cep.util.Booleans;
-import utilityFeatures.EqualsJsonString;
-import utilityFeatures.GetJsonFields;
+import utilityfeatures.EqualsJsonString;
+import utilityfeatures.GetJsonFields;
 
 /**
  * This class allows to verify the first property of the project
