@@ -9,15 +9,15 @@ import ca.uqac.lif.cep.util.Booleans;
 import ca.uqac.lif.json.JsonElement;
 import ca.uqac.lif.json.JsonNull;
 import ca.uqac.lif.json.JsonNumber;
-import utilityFeatures.EqualsJsonString;
-import utilityFeatures.GetJsonFields;
+import utilityfeatures.EqualsJsonString;
+import utilityfeatures.GetJsonFields;
 import ca.uqac.lif.cep.functions.Constant;
 
 /**
  * 
  * This class allows to verify the second property of the project (refer to the pdf included in the project): absence_of Temp t where not ( a <= t . t1 and t . t1 < b)
  * It take JsonElements and give a Boolean
- * @author Helloïs BARBOSA
+ * @author Hellois BARBOSA
  *
  */
 public class TemperatureInRange extends GroupProcessor {
@@ -116,7 +116,7 @@ public class TemperatureInRange extends GroupProcessor {
 	
 	/**
 	 * This inner class is a BinaryFunction that it take a Float[] (meaning a range of two value: [a, b]) and a JsonElement correspond to the temperature (x) value and give a Boolean (a <= x < b)
-	 * @author Helloïs BARBOSA
+	 * @author Hellois BARBOSA
 	 *
 	 */
 	private class IsBetween extends BinaryFunction<Float[], JsonElement, Boolean>{

@@ -1,7 +1,7 @@
 package utilityfeatures;
 
 /**
- * @author Helloïs BARBOSA
+ * @author Hellois BARBOSA
  *
  */
 public class UtilityMethods

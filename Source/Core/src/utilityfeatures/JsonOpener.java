@@ -8,7 +8,7 @@ import java.io.InputStream;
 
 /**
  * This class allow to read files in the following directory: "/trace/" (in application directory)
- * @author Helloïs BARBOSA
+ * @author Hellois BARBOSA
  *
  */
 public class JsonOpener extends ReadLines

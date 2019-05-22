@@ -12,10 +12,10 @@ import ca.uqac.lif.json.JsonElement;
 import ca.uqac.lif.json.JsonList;
 import ca.uqac.lif.json.JsonNumber;
 import properties.HipPairDistance;
-import utilityFeatures.EqualsJsonString;
-import utilityFeatures.GetJsonFields;
-import utilityFeatures.ParseFileToJson;
-import utilityFeatures.UtilityMethods;
+import utilityfeatures.EqualsJsonString;
+import utilityfeatures.GetJsonFields;
+import utilityfeatures.ParseFileToJson;
+import utilityfeatures.UtilityMethods;
 
 public class Main {
 
