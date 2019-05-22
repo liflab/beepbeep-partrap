@@ -8,7 +8,7 @@ import ca.uqac.lif.json.JsonNull;
 /**
  * This class allow to get fields in JsonElement
  * (meaning a JsonMap), it return a JsonElement in output
- * @author Hellois BARBOSA
+ * @author Hello�s BARBOSA
  *
  */
 public class GetJsonFields extends UnaryFunction<JsonElement, JsonElement>

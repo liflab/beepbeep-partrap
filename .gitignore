@@ -18,6 +18,9 @@
 /dep/
 /tests/
 
+
+Source/Core/src/Main.java
+
 # Top-level jar, but not jars in subfolders (if any)
 *.jar
 !*/*.jar
