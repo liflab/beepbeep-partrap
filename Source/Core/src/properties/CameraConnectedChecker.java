@@ -198,6 +198,13 @@ public class CameraConnectedChecker extends GroupProcessor
     //We have just to pass the result in a custom UnaryFunction to do the specific processing
     m_cameraAlreadyConnected = new ApplyFunction(new CameraAlreadyConnected());
     Connector.connect(m_mainFilter, m_cameraAlreadyConnected);
+    
+    this.addProcessors(m_mainFork, m_mainFilter,
+        m_getCameraId, m_constCameraId, m_equalCameraId,
+        m_trackerFork, m_getTrackerId, m_constTrackerId, m_equalTrackerId, 
+        m_getTrackerState, m_constTrackerState, m_containTrackerState, m_trackerLogicAnd, m_mainLogicOr, m_cameraAlreadyConnected);
+    this.associateInput(0, m_mainFork, 0);
+    this.associateOutput(0, m_cameraAlreadyConnected, 0);
   }
   
   /**
