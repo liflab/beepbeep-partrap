@@ -14,7 +14,7 @@ import java.util.ArrayList;
 /**
  * This class is a GroupProcessor that it take a file
  * and parse it in String stream, allow us to parse in JSON
- * @author Helloïs BARBOSA
+ * @author Hellois BARBOSA
  *
  */
 public class ParseFileToJson extends GroupProcessor
@@ -78,7 +78,7 @@ public class ParseFileToJson extends GroupProcessor
   /**
    * This class is a UnaryFunction that it take a String
    * (meaning a line of a file) and give an ArrayList of each object that he find in the String
-   * @author Helloïs BARBOSA
+   * @author Helloï¿½s BARBOSA
    *
    */
   @SuppressWarnings("rawtypes")
