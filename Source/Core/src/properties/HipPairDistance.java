@@ -12,9 +12,9 @@ import ca.uqac.lif.cep.util.Numbers;
 import ca.uqac.lif.json.JsonElement;
 import ca.uqac.lif.json.JsonList;
 import ca.uqac.lif.json.JsonNumber;
-import utilityFeatures.EqualsJsonString;
-import utilityFeatures.GetJsonFields;
-import utilityFeatures.UtilityMethods;
+import utilityfeatures.EqualsJsonString;
+import utilityfeatures.GetJsonFields;
+import utilityfeatures.UtilityMethods;
 
 
 public class HipPairDistance extends GroupProcessor

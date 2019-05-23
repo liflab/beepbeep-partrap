@@ -21,7 +21,7 @@ import utilityfeatures.GetJsonFields;
  *          absence_of Temp t where not ( a <= t . t1 and t . t1 < b)
  *          
  * It take JsonElements and give a Boolean
- * @author Helloïs BARBOSA
+ * @author Hellois BARBOSA
  *
  */
 public class TemperatureInRange extends GroupProcessor

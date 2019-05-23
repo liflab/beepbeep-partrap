@@ -7,7 +7,7 @@ import ca.uqac.lif.json.JsonString;
 
 /**
  * Function that check if a JsonElement (meaning a JsonString) and a String are equals
- * @author Helloïs BARBOSA
+ * @author Hellois BARBOSA
  *
  */
 public class EqualsJsonString extends BinaryFunction<JsonElement, String, Boolean>

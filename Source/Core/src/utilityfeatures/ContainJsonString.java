@@ -8,7 +8,7 @@ import ca.uqac.lif.json.JsonString;
 /**
  * Function that check if a JsonElement (meaning a JsonString)
  * contain a String passed as a parameter
- * @author Helloïs BARBOSA
+ * @author Hellois BARBOSA
  *
  */
 public class ContainJsonString extends BinaryFunction<JsonElement, String, Boolean>
