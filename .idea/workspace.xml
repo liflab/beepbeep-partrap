@@ -4,18 +4,7 @@
     <option name="FILTER_RESOLVED_ITEMS" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53098847-b673-41c5-b597-1f17880aa466" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Core/src/properties/RedoAcquisition.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Core/src/properties/RedoAcquisition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Core/src/utilityfeatures/JsonOpener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Core/src/utilityfeatures/JsonOpener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CoreTest/src/DummyTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CoreTest/src/TemperatureInRangeTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoreTest/src/TemperatureInRangeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CoreTest/src/UtilityMethodsTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoreTest/src/UtilityMethodsTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="53098847-b673-41c5-b597-1f17880aa466" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
