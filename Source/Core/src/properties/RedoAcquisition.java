@@ -13,7 +13,7 @@ import utilityfeatures.GetJsonFields;
  * This class allows to verify the first property of the project
  * (refer to the pdf included in the project): occurrence_of Enter e where e . state == 'redo '
  * It take JsonElements and give a Boolean
- * @author Helloïs BARBOSA
+ * @author Hellois BARBOSA
  *
  */
 public class RedoAcquisition extends GroupProcessor 
