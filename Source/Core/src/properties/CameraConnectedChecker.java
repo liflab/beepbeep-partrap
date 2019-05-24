@@ -9,6 +9,9 @@ import ca.uqac.lif.cep.tmf.Filter;
 import ca.uqac.lif.cep.tmf.Fork;
 import ca.uqac.lif.cep.util.Booleans;
 import ca.uqac.lif.json.JsonElement;
+import ca.uqac.lif.json.JsonMap;
+import ca.uqac.lif.json.JsonNull;
+import ca.uqac.lif.json.JsonString;
 import utilityfeatures.ContainJsonString;
 import utilityfeatures.EqualsJsonString;
 import utilityfeatures.GetJsonFields;
@@ -132,7 +135,7 @@ public class CameraConnectedChecker extends GroupProcessor
    */
   public CameraConnectedChecker()
   {
-    super(1, 1);
+    super(1,1);
     
     m_mainFork = new Fork(3);
     
@@ -167,11 +170,11 @@ public class CameraConnectedChecker extends GroupProcessor
     
     m_equalTrackerId = new ApplyFunction(new EqualsJsonString());
     Connector.connect(m_getTrackerId, 0, m_equalTrackerId, 0);
-    Connector.connect(m_constTrackerId, 0, m_equalCameraId, 1);
+    Connector.connect(m_constTrackerId, 0, m_equalTrackerId, 1);
     
-    //Second branch of the m_trackerFork (output: 1): here we check
+   //Second branch of the m_trackerFork (output: 1): here we check
     //if state contain: TrackersConnection
-    m_getTrackerState = new ApplyFunction(new GetJsonFields(GetJsonFields.JK_ID));
+    m_getTrackerState = new ApplyFunction(new GetJsonFields(GetJsonFields.JK_STATE));
     Connector.connect(m_trackerFork, 1, m_getTrackerState, 0);
     
     m_constTrackerState = new ApplyFunction(new Constant(s_stateTrackerValue));
@@ -217,18 +220,31 @@ public class CameraConnectedChecker extends GroupProcessor
   {
 
     /**
+     * This Boolean to check if camera is already connected
+     */
+    private Boolean m_cameraConnected;
+    
+    /**
      * Instantiates a new UnaryFunction
      */
     public CameraAlreadyConnected()
     {
       super(JsonElement.class, Boolean.class);
+      m_cameraConnected = false;
     }
     
     @Override
     public Boolean getValue(JsonElement arg0)
     {
-      System.out.println("Json object: " + arg0);
-      return true;
+      JsonElement res = ((JsonMap) arg0).get(GetJsonFields.JK_ID);
+      if (!(res instanceof JsonNull))
+      {
+        if (((JsonString)res).stringValue().equals(s_idCameraValue) && !m_cameraConnected)
+        {
+          m_cameraConnected = true;
+        }
+      }
+      return m_cameraConnected;
     }
     
   }
