@@ -1,35 +1,27 @@
-import groovy.util.GroovyTestCase;
-import org.codehaus.groovy.runtime.DefaultGroovyMethods;
 import org.junit.Assert;
+import org.junit.Test;
 import utilityfeatures.UtilityMethods;
 
-public class UtilityMethodsTest extends GroovyTestCase
+public class UtilityMethodsTest
 {
-    public void setUp()
-    {
-        super.setUp();
-    }
 
     public void tearDown()
     {
     }
 
-    @test
+    @Test
     public void testDistanceProcessing()
     {
-
-
         // arrange;
         Float[] point1 = new Float[3];
-        DefaultGroovyMethods.putAt(point1, 0, 1f);
-        DefaultGroovyMethods.putAt(point1, 1, 2f);
-        DefaultGroovyMethods.putAt(point1, 2, 3f);
-
+        point1[0] = 0f;
+        point1[1] = 1f;
+        point1[2] = 2f;
 
         Float[] point2 = new Float[3];
-        DefaultGroovyMethods.putAt(point2, 0, 1f);
-        DefaultGroovyMethods.putAt(point2, 1, 2f);
-        DefaultGroovyMethods.putAt(point2, 2, 3f);
+        point2[0] = 0f;
+        point2[1] = 1f;
+        point2[2] = 2f;
 
 
         //act

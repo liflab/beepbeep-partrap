@@ -2,9 +2,13 @@ package properties;
 
 import ca.uqac.lif.cep.Connector;
 import ca.uqac.lif.cep.GroupProcessor;
+import ca.uqac.lif.cep.ProcessorException;
+import ca.uqac.lif.cep.Pushable;
+import ca.uqac.lif.cep.diagnostics.Derivation;
 import ca.uqac.lif.cep.functions.ApplyFunction;
 import ca.uqac.lif.cep.functions.BinaryFunction;
 import ca.uqac.lif.cep.functions.Constant;
+import ca.uqac.lif.cep.tmf.Divert;
 import ca.uqac.lif.cep.tmf.Filter;
 import ca.uqac.lif.cep.tmf.Fork;
 import ca.uqac.lif.cep.tmf.Trim;
@@ -16,6 +20,10 @@ import utilityfeatures.EqualsJsonString;
 import utilityfeatures.GetJsonFields;
 import utilityfeatures.UtilityMethods;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
+
 
 public class HipPairDistance extends GroupProcessor
 {
@@ -24,6 +32,8 @@ public class HipPairDistance extends GroupProcessor
   private int m_maxDistance = 4;
 
   private static String s_idValue = "HipCenter";
+
+  private MyDerivation derivator;
 
   /*
    *   The first fork used to filter only the relevant events in the log file
@@ -88,6 +98,8 @@ public class HipPairDistance extends GroupProcessor
   {
     super(1, 1);
 
+    derivator = new MyDerivation();
+
     m_baseFork = new Fork(2);
 
     m_getEventId = new ApplyFunction(new GetJsonFields(GetJsonFields.JK_ID));
@@ -123,12 +135,20 @@ public class HipPairDistance extends GroupProcessor
     Connector.connect(m_upperLimit, 0, m_smallerThan, 1);
 
     this.addProcessors(m_baseFork, m_getEventId, m_constHipCenterID, m_equalIdValidation,
-              m_baseFilter, m_getPoint, m_compareFork, m_compareTrim,
-            m_hipDistance, m_upperLimit, m_smallerThan);
+      m_baseFilter, m_getPoint, m_compareFork, m_compareTrim,
+      m_hipDistance, m_upperLimit, m_smallerThan);
     this.associateInput(0, m_baseFork, 0);
     this.associateOutput(0, m_smallerThan, 0);
 
   }
+
+  public void reconnect()
+  {
+
+    Connector.connect(myDivert, m_baseFork);
+
+  }
+
 
   private class CalculateDistance extends BinaryFunction<JsonElement, JsonElement, Float>
   {
@@ -148,17 +168,47 @@ public class HipPairDistance extends GroupProcessor
         JsonList list1 = (JsonList) json_element;
         JsonList list2 = (JsonList) json_element2;
 
-        Float[] point1 = new Float[]{((JsonNumber) list1.get(0)).numberValue().floatValue(),
-                ((JsonNumber) list1.get(1)).numberValue().floatValue(),
-                ((JsonNumber) list1.get(2)).numberValue().floatValue()};
+        Float[] point1 = new Float[] {((JsonNumber) list1.get(0)).numberValue().floatValue(),
+          ((JsonNumber) list1.get(1)).numberValue().floatValue(),
+          ((JsonNumber) list1.get(2)).numberValue().floatValue()};
 
-        Float[] point2 = new Float[]{((JsonNumber) list2.get(0)).numberValue().floatValue(),
-                ((JsonNumber) list2.get(1)).numberValue().floatValue(),
-                ((JsonNumber) list2.get(2)).numberValue().floatValue()};
+        Float[] point2 = new Float[] {((JsonNumber) list2.get(0)).numberValue().floatValue(),
+          ((JsonNumber) list2.get(1)).numberValue().floatValue(),
+          ((JsonNumber) list2.get(2)).numberValue().floatValue()};
         Float a = 0f;
         return UtilityMethods.distanceProcessing(point1, point2);
       }
       return Float.valueOf(0);
+    }
+  }
+
+  public class MyDerivation extends Derivation
+  {
+    List<Object> inputsList = new ArrayList<Object>();
+
+
+    @Override
+    protected boolean compute(Object[] inputs, Queue<Object[]> outputs) throws ProcessorException {
+      Pushable[] var6;
+
+      inputsList.add(inputs[0]);
+
+      int var5 = (var6 = this.m_pushables).length;
+
+      for(int var4 = 0; var4 < var5; ++var4) {
+        Pushable p = var6[var4];
+        p.push(inputs[0]);
+      }
+
+      outputs.add(inputs);
+      if (this.m_slowDown > 0L) {
+        try {
+          Thread.sleep(this.m_slowDown);
+        } catch (InterruptedException var7) {
+        }
+      }
+
+      return true;
     }
   }
 }

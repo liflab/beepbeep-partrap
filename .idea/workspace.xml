@@ -4,7 +4,15 @@
     <option name="FILTER_RESOLVED_ITEMS" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53098847-b673-41c5-b597-1f17880aa466" name="Default Changelist" comment="" />
+    <list default="true" id="53098847-b673-41c5-b597-1f17880aa466" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.~lock.properties_TKA.docx#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Core/Core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Core/Core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoreTest/src/TemperatureInRangeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoreTest/src/UtilityMethodsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoreTest/src/UtilityMethodsTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,31 +21,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="234" />
+    <option name="myElementSize" value="239" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Core/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/TemperatureInRangeTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Core/src/utilityfeatures/JsonOpener.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -50,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Core/src/properties/RedoAcquisition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
+            <state relative-caret-position="120">
               <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
             </state>
           </provider>
@@ -79,26 +69,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Core/src/utilityfeatures/ContainJsonString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/UtilityMethodsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="270">
+              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java">
+        <entry file="file://$PROJECT_DIR$/Source/Core/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+            <state relative-caret-position="435">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,15 +88,61 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java">
+        <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/UtilityMethodsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state>
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="147" selection-start-line="147" selection-end-line="147" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5289#5297#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/JarFiles/diagnostics.jar!/ca/uqac/lif/cep/diagnostics/Derivation.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="62" selection-start-line="62" selection-end-line="80" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/JarFiles/beepbeep-3.jar!/ca/uqac/lif/cep/tmf/Divert.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1365">
+              <caret line="124" column="20" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>compute</find>
+      <find>util</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -133,21 +160,21 @@
         <option value="$PROJECT_DIR$/Source/Core/src/properties/TemperatureInRange.java" />
         <option value="$PROJECT_DIR$/Source/Core/src/utilityfeatures/GetJsonFields.java" />
         <option value="$PROJECT_DIR$/Source/CoreTest/src/UtilityMethodsTest.groovy" />
-        <option value="$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java" />
         <option value="$PROJECT_DIR$/Source/Core/src/properties/HipPairDistanceTest.groovy" />
         <option value="$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.groovy" />
         <option value="$PROJECT_DIR$/Source/Core/src/utilityfeatures/JsonOpener.java" />
         <option value="$PROJECT_DIR$/Source/Core/src/properties/RedoAcquisition.java" />
         <option value="$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java" />
         <option value="$PROJECT_DIR$/Source/CoreTest/src/UtilityMethodsTest.java" />
+        <option value="$PROJECT_DIR$/Source/Core/src/Main.java" />
+        <option value="$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="52" />
-    <option name="y" value="28" />
-    <option name="width" value="1628" />
-    <option name="height" value="1022" />
+    <option name="x" value="309" />
+    <option name="width" value="1446" />
+    <option name="height" value="911" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -156,6 +183,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,11 +217,14 @@
               <item name="CoreTest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="beepbeep-partrap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,12 +232,12 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Téléchargements/lif-style-master/LIF CheckStyle Coding Rules.xml" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/JarFiles/diagnostics.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="org.infernus.idea.checkstyle.CheckStyleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -229,12 +260,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UtilityMethodsTest.testDistanceProcessing">
+  <component name="RunManager" selected="Application.Unnamed">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Core" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HipPairDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoreTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HipPairDistanceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UtilityMethodsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoreTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UtilityMethodsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -250,11 +306,16 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Unnamed" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="JUnit.UtilityMethodsTest.testDistanceProcessing" />
+      <item itemvalue="JUnit.UtilityMethodsTest" />
+      <item itemvalue="JUnit.HipPairDistanceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HipPairDistanceTest" />
+        <item itemvalue="JUnit.UtilityMethodsTest" />
         <item itemvalue="JUnit.UtilityMethodsTest.testDistanceProcessing" />
       </list>
     </recent_temporary>
@@ -273,21 +334,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UtilityMethodsTest_testDistanceProcessing - 2019.05.22 at 11h 04m 38s.xml">
-      <configuration name="UtilityMethodsTest.testDistanceProcessing" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilityMethodsTest_testDistanceProcessing - 2019.05.22 at 11h 07m 08s.xml">
-      <configuration name="UtilityMethodsTest.testDistanceProcessing" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilityMethodsTest_testDistanceProcessing - 2019.05.22 at 11h 07m 18s.xml">
-      <configuration name="UtilityMethodsTest.testDistanceProcessing" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilityMethodsTest_testDistanceProcessing - 2019.05.22 at 11h 08m 40s.xml">
-      <configuration name="UtilityMethodsTest.testDistanceProcessing" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilityMethodsTest_testDistanceProcessing - 2019.05.22 at 11h 10m 17s.xml">
-      <configuration name="UtilityMethodsTest.testDistanceProcessing" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UtilityMethodsTest_testDistanceProcessing - 2019.05.22 at 11h 10m 26s.xml">
       <configuration name="UtilityMethodsTest.testDistanceProcessing" configurationId="JUnit" />
     </history-entry>
@@ -303,30 +349,55 @@
     <history-entry file="UtilityMethodsTest_testDistanceProcessing - 2019.05.23 at 15h 27m 54s.xml">
       <configuration name="UtilityMethodsTest.testDistanceProcessing" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UtilityMethodsTest_testDistanceProcessing - 2019.05.27 at 09h 11m 12s.xml">
+      <configuration name="UtilityMethodsTest.testDistanceProcessing" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilityMethodsTest_testDistanceProcessing - 2019.05.27 at 09h 14m 07s.xml">
+      <configuration name="UtilityMethodsTest.testDistanceProcessing" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilityMethodsTest - 2019.05.27 at 09h 19m 41s.xml">
+      <configuration name="UtilityMethodsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilityMethodsTest - 2019.05.27 at 09h 19m 50s.xml">
+      <configuration name="UtilityMethodsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HipPairDistanceTest - 2019.05.27 at 09h 19m 59s.xml">
+      <configuration name="HipPairDistanceTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="28" width="1628" height="1022" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24968314" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26108998" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32919955" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32807216" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49683145" visible="true" weight="0.32807216" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" sideWeight="0.49936628" visible="true" weight="0.32919955" />
       <window_info anchor="bottom" id="CheckStyle" order="7" weight="0.32919955" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32896176" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22773394" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32807216" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.71609634" weight="0.319053" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006337" side_tool="true" visible="true" weight="0.32919955" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49873257" weight="0.32807216" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32919955" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -335,32 +406,14 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32944787" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32889733" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Source/CoreTest/src/UtilityMethodsTest.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/beepbeep_partrap$UtilityMethodsTest_testDistanceProcessing.ic" NAME="UtilityMethodsTest.testDistanceProcessing Coverage Results" MODIFIED="1558537847599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/beepbeep_partrap$UtilityMethodsTest_testDistanceProcessing.ic" NAME="UtilityMethodsTest.testDistanceProcessing Coverage Results" MODIFIED="1558962847154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/DummyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/DummyTest.java" />
     <entry file="file://$PROJECT_DIR$/Source/Core/src/properties/TemperatureInRange.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -382,6 +435,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/TemperatureInRangeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar!/com/sun/xml/internal/bind/v2/schemagen/xmlschema/SimpleDerivation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#443#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../groovy-2.5.7/lib/junit-4.12.jar!/org/junit/internal/requests/FilterRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Core/src/utilityfeatures/JsonOpener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Core/src/properties/RedoAcquisition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Source/Core/src/utilityfeatures/GetJsonFields.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -400,60 +491,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Core/src/utilityfeatures/ContainJsonString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="270">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Core/src/Main.java">
+    <entry file="jar://$PROJECT_DIR$/JarFiles/beepbeep-3.jar!/ca/uqac/lif/cep/tmf/Divert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="1365">
+          <caret line="124" column="20" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java">
+    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Core/src/utilityfeatures/JsonOpener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Core/src/properties/RedoAcquisition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/TemperatureInRangeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/UtilityMethodsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Core/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/JarFiles/diagnostics.jar!/ca/uqac/lif/cep/diagnostics/Derivation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="62" selection-start-line="62" selection-end-line="80" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5289#5297#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -507,6 +600,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>Core</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
