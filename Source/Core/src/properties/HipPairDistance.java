@@ -141,12 +141,19 @@ public class HipPairDistance extends GroupProcessor
 
   }
 
-  public void Reconnect()
+  public void ReconnectToGetEventId()
   {
 
     Connector.connect(m_baseFork, 0, derivator, 0);
     Connector.connect(derivator, m_getEventId );
 
+
+  }
+
+  public void ReconnectToTrim()
+  {
+    Connector.connect(m_baseFilter, derivator);
+    Connector.connect (derivator, m_compareFork);
 
   }
 

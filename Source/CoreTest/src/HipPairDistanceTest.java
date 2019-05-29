@@ -1,17 +1,62 @@
 import ca.uqac.lif.cep.Connector;
 import ca.uqac.lif.cep.io.Print;
 import ca.uqac.lif.cep.tmf.Pump;
+import ca.uqac.lif.json.JsonList;
 import ca.uqac.lif.json.JsonMap;
 import org.junit.Test;
 import properties.HipPairDistance;
 import utilityfeatures.ParseFileToJson;
 import org.junit.Assert;
-import org.junit.Test;
 
 
 public class HipPairDistanceTest
 {
 
+
+  @Test
+  public void ValidateJsonInputAssertIdHipCenter()
+  {
+    // Arrange
+    ParseFileToJson parse = new ParseFileToJson("long_trace.json");
+
+    HipPairDistance prop = new HipPairDistance(2f);
+    prop.ReconnectToGetEventId();
+
+    Connector.connect(parse, prop);
+
+    //Need a pump to automate the process
+    Pump activator = new Pump(0);
+    Connector.connect(prop, activator);
+
+    Print p = new Print().setSeparator("\n\n");
+    Connector.connect(activator, p);
+
+    //creating jsonlist
+
+    double xAxis = 87.22969184462295;
+    double yAxis = 241.80033059322645;
+    double zAxis = -217.02861872450953;
+
+    JsonList point = new JsonList();
+    point.add(xAxis);
+    point.add(yAxis);
+    point.add(zAxis);
+
+    JsonMap a = new JsonMap();
+
+    a.put("id", "HipCenter");
+    a.put("time", -6.2135683761E10);
+    a.put("point", point  );
+
+    //Act
+    activator.run();
+    Object b = HipPairDistance.MyDerivation.inputsList.get(3);
+
+    //Assert
+    Assert.assertEquals( b.toString(), a.toString());
+
+
+  }
 
   @Test
   public void toto()
@@ -20,10 +65,10 @@ public class HipPairDistanceTest
     ParseFileToJson parse = new ParseFileToJson("long_trace.json");
 
     HipPairDistance prop = new HipPairDistance(2f);
-    prop.Reconnect();
-    /** FIN PROPERTY 6 **/
+    prop.ReconnectToGetEventId();
 
     Connector.connect(parse, prop);
+
     //Need a pump to automate the process
     Pump activator = new Pump(0);
     Connector.connect(prop, activator);
@@ -31,15 +76,31 @@ public class HipPairDistanceTest
     Print p = new Print().setSeparator("\n\n");
     Connector.connect(activator, p);
 
-//Act
-    activator.run();
+    //creating jsonlist
+
+    double xAxis = 87.22969184462295;
+    double yAxis = 241.80033059322645;
+    double zAxis = -217.02861872450953;
+
+    JsonList point = new JsonList();
+    point.add(xAxis);
+    point.add(yAxis);
+    point.add(zAxis);
+
     JsonMap a = new JsonMap();
-    a
-    //JsonMap a = '{\"id\":\"HipCenter\",\"time\":-6.2135683761E10,\"point\":[87.22969184462295,241.80033059322645,-217.02861872450953]}';
+
+    a.put("id", "HipCenter");
+    a.put("time", -6.2135683761E10);
+    a.put("point", point  );
+
+    //Act
+    activator.run();
+    Object b = HipPairDistance.MyDerivation.inputsList.get(3);
 
     //Assert
-    Assert.assertEquals( HipPairDistance.MyDerivation.inputsList.get(3), HipPairDistance.MyDerivation.inputsList.get(3));
+    Assert.assertEquals( b.toString(), a.toString());
 
 
   }
+
 }
