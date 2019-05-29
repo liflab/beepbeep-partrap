@@ -1,9 +1,6 @@
 package properties;
 
-import ca.uqac.lif.cep.Connector;
-import ca.uqac.lif.cep.GroupProcessor;
-import ca.uqac.lif.cep.ProcessorException;
-import ca.uqac.lif.cep.Pushable;
+import ca.uqac.lif.cep.*;
 import ca.uqac.lif.cep.diagnostics.Derivation;
 import ca.uqac.lif.cep.functions.ApplyFunction;
 import ca.uqac.lif.cep.functions.BinaryFunction;
@@ -34,6 +31,8 @@ public class HipPairDistance extends GroupProcessor
   private static String s_idValue = "HipCenter";
 
   private MyDerivation derivator;
+
+
 
   /*
    *   The first fork used to filter only the relevant events in the log file
@@ -142,10 +141,12 @@ public class HipPairDistance extends GroupProcessor
 
   }
 
-  public void reconnect()
+  public void Reconnect()
   {
 
-    Connector.connect(myDivert, m_baseFork);
+    Connector.connect(m_baseFork, 0, derivator, 0);
+    Connector.connect(derivator, m_getEventId );
+
 
   }
 
@@ -182,10 +183,10 @@ public class HipPairDistance extends GroupProcessor
     }
   }
 
-  public class MyDerivation extends Derivation
+  public static class MyDerivation extends Derivation
   {
-    List<Object> inputsList = new ArrayList<Object>();
 
+    public static List<Object> inputsList = new ArrayList<Object>();
 
     @Override
     protected boolean compute(Object[] inputs, Queue<Object[]> outputs) throws ProcessorException {
