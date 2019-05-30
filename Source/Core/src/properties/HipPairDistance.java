@@ -30,9 +30,10 @@ public class HipPairDistance extends GroupProcessor
 
   private static String s_idValue = "HipCenter";
 
+  /*
+   *  The derivator used for unit tests
+   */
   private MyDerivation derivator;
-
-
 
   /*
    *   The first fork used to filter only the relevant events in the log file
@@ -118,7 +119,12 @@ public class HipPairDistance extends GroupProcessor
     Connector.connect(m_baseFilter, m_getPoint);
 
     m_compareFork = new Fork(2);
-    Connector.connect(m_getPoint, m_compareFork);
+    //delete this
+
+    Connector.connect(m_getPoint, derivator);
+    Connector.connect( derivator, m_compareFork);
+
+    //Connector.connect(m_getPoint, m_compareFork);
 
     m_compareTrim = new Trim(1);
     Connector.connect(m_compareFork, 0, m_compareTrim, 0);
@@ -145,7 +151,7 @@ public class HipPairDistance extends GroupProcessor
   {
 
     Connector.connect(m_baseFork, 0, derivator, 0);
-    Connector.connect(derivator, m_getEventId );
+    Connector.connect(derivator, m_getPoint );
 
 
   }

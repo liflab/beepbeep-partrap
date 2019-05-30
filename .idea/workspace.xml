@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53098847-b673-41c5-b597-1f17880aa466" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Core/Core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Core/Core.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CoreTest/CoreTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoreTest/CoreTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Core/src/properties/TemperatureInRange.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="952">
               <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
             </state>
           </provider>
@@ -39,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Core/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="119">
               <caret line="11" selection-start-line="11" selection-end-line="24" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -48,24 +45,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="188" column="17" selection-start-line="188" selection-start-column="17" selection-end-line="188" selection-end-column="17" />
+            <state relative-caret-position="165">
+              <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="class#CalculateDistance#0;class#HipPairDistance#0" />
-                <element signature="e#5325#5333#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Core/src/utilityfeatures/GetJsonFields.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-587">
+            <state relative-caret-position="408">
               <caret line="27" column="57" selection-start-line="25" selection-end-line="27" selection-end-column="57" />
             </state>
           </provider>
@@ -74,11 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="369">
+              <caret line="67" column="18" lean-forward="true" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -86,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/UtilityMethodsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="170">
               <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -135,14 +127,14 @@
         <option value="$PROJECT_DIR$/Source/Core/src/Main.java" />
         <option value="$PROJECT_DIR$/Source/Core/src/properties/HipPairDistanceTest.java" />
         <option value="$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTestTest.java" />
-        <option value="$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java" />
         <option value="$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java" />
+        <option value="$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="291" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="327" />
+    <option name="y" value="-9" />
     <option name="width" value="1301" />
     <option name="height" value="1092" />
   </component>
@@ -165,6 +157,12 @@
               <item name="beepbeep-partrap" type="b2602c69:ProjectViewProjectNode" />
               <item name="Core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beepbeep-partrap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="properties" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="beepbeep-partrap" type="b2602c69:ProjectViewProjectNode" />
@@ -197,7 +195,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559147747491" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559243980481" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -232,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HipPairDistanceTest.toto">
+  <component name="RunManager" selected="JUnit.HipPairDistanceTest.ValidateJsonElementTypePostFilter_AssertHipCenter">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Core" />
@@ -249,11 +247,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HipPairDistanceTest.toto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HipPairDistanceTest.ValidateJsonElementTypePostFilter_AssertHipCenter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoreTest" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HipPairDistanceTest" />
-      <option name="METHOD_NAME" value="toto" />
+      <option name="METHOD_NAME" value="ValidateJsonElementTypePostFilter_AssertHipCenter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -294,11 +292,11 @@
       <item itemvalue="JUnit.UtilityMethodsTest.testDistanceProcessing" />
       <item itemvalue="JUnit.UtilityMethodsTest" />
       <item itemvalue="JUnit.HipPairDistanceTest" />
-      <item itemvalue="JUnit.HipPairDistanceTest.toto" />
+      <item itemvalue="JUnit.HipPairDistanceTest.ValidateJsonElementTypePostFilter_AssertHipCenter" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HipPairDistanceTest.toto" />
+        <item itemvalue="JUnit.HipPairDistanceTest.ValidateJsonElementTypePostFilter_AssertHipCenter" />
         <item itemvalue="JUnit.HipPairDistanceTest" />
         <item itemvalue="JUnit.UtilityMethodsTest" />
       </list>
@@ -318,35 +316,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UtilityMethodsTest - 2019.05.27 at 09h 19m 41s.xml">
-      <configuration name="UtilityMethodsTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilityMethodsTest - 2019.05.27 at 09h 19m 50s.xml">
-      <configuration name="UtilityMethodsTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HipPairDistanceTest - 2019.05.27 at 09h 19m 59s.xml">
-      <configuration name="HipPairDistanceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilityMethodsTest_testDistanceProcessing - 2019.05.29 at 10h 15m 50s.xml">
-      <configuration name="UtilityMethodsTest.testDistanceProcessing" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HipPairDistanceTest_toto - 2019.05.29 at 10h 17m 25s.xml">
-      <configuration name="HipPairDistanceTest.toto" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HipPairDistanceTest_toto - 2019.05.29 at 10h 18m 28s.xml">
-      <configuration name="HipPairDistanceTest.toto" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HipPairDistanceTest_toto - 2019.05.29 at 10h 20m 36s.xml">
-      <configuration name="HipPairDistanceTest.toto" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HipPairDistanceTest_toto - 2019.05.29 at 10h 21m 36s.xml">
-      <configuration name="HipPairDistanceTest.toto" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HipPairDistanceTest_toto - 2019.05.29 at 10h 32m 58s.xml">
-      <configuration name="HipPairDistanceTest.toto" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HipPairDistanceTest_toto - 2019.05.29 at 10h 35m 30s.xml">
       <configuration name="HipPairDistanceTest.toto" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HipPairDistanceTest_toto - 2019.05.29 at 12h 58m 25s.xml">
+      <configuration name="HipPairDistanceTest.toto" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HipPairDistanceTest_ValidateJsonElementTypePostFilter_AssertHipCenter - 2019.05.30 at 10h 46m 03s.xml">
+      <configuration name="HipPairDistanceTest.ValidateJsonElementTypePostFilter_AssertHipCenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HipPairDistanceTest_ValidateJsonElementTypePostFilter_AssertHipCenter - 2019.05.30 at 10h 54m 52s.xml">
+      <configuration name="HipPairDistanceTest.ValidateJsonElementTypePostFilter_AssertHipCenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HipPairDistanceTest_ValidateJsonElementTypePostFilter_AssertHipCenter - 2019.05.30 at 10h 56m 26s.xml">
+      <configuration name="HipPairDistanceTest.ValidateJsonElementTypePostFilter_AssertHipCenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HipPairDistanceTest_ValidateJsonElementTypePostFilter_AssertHipCenter - 2019.05.30 at 10h 56m 56s.xml">
+      <configuration name="HipPairDistanceTest.ValidateJsonElementTypePostFilter_AssertHipCenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HipPairDistanceTest_ValidateJsonElementTypePostFilter_AssertHipCenter - 2019.05.30 at 14h 41m 33s.xml">
+      <configuration name="HipPairDistanceTest.ValidateJsonElementTypePostFilter_AssertHipCenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HipPairDistanceTest_ValidateJsonElementTypePostFilter_AssertHipCenter - 2019.05.30 at 14h 41m 35s.xml">
+      <configuration name="HipPairDistanceTest.ValidateJsonElementTypePostFilter_AssertHipCenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HipPairDistanceTest_ValidateJsonElementTypePostFilter_AssertHipCenter - 2019.05.30 at 14h 46m 21s.xml">
+      <configuration name="HipPairDistanceTest.ValidateJsonElementTypePostFilter_AssertHipCenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HipPairDistanceTest_ValidateJsonElementTypePostFilter_AssertHipCenter - 2019.05.30 at 14h 58m 27s.xml">
+      <configuration name="HipPairDistanceTest.ValidateJsonElementTypePostFilter_AssertHipCenter" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -362,7 +360,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17110874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17430703" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -371,19 +369,19 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49683145" weight="0.32807216" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.5308776" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49683145" visible="true" weight="0.32719395" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5308776" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49936628" weight="0.32919955" />
       <window_info anchor="bottom" id="CheckStyle" order="7" weight="0.32919955" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32896176" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.71609634" weight="0.319053" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.71609634" weight="0.31852654" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006337" side_tool="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49873257" weight="0.32807216" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32919955" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" visible="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -398,9 +396,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java</url>
-          <line>40</line>
+          <line>83</line>
           <properties />
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -459,54 +463,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java" />
     <entry file="jar://$PROJECT_DIR$/JarFiles/diagnostics.jar!/ca/uqac/lif/cep/diagnostics/Derivation.class" />
-    <entry file="file://$PROJECT_DIR$/Source/Core/src/properties/TemperatureInRange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Core/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="24" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="188" column="17" selection-start-line="188" selection-start-column="17" selection-end-line="188" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#CalculateDistance#0;class#HipPairDistance#0" />
-            <element signature="e#5325#5333#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/UtilityMethodsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTestTest.java" />
     <entry file="file://$PROJECT_DIR$/Source/Core/src/utilityfeatures/ParseFileToJson.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68">
@@ -514,10 +472,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java">
+    <entry file="file://$PROJECT_DIR$/Source/Core/src/properties/TemperatureInRange.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="952">
+          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Core/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" selection-start-line="11" selection-end-line="24" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -526,8 +491,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Core/src/utilityfeatures/GetJsonFields.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-587">
+        <state relative-caret-position="408">
           <caret line="27" column="57" selection-start-line="25" selection-end-line="27" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/UtilityMethodsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/HipPairDistanceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="67" column="18" lean-forward="true" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
