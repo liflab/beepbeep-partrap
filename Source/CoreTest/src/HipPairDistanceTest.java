@@ -8,6 +8,10 @@ import properties.HipPairDistance;
 import utilityfeatures.ParseFileToJson;
 import org.junit.Assert;
 
+import java.util.ArrayList;
+
+import static properties.HipPairDistance.MyDerivation.inputsList;
+
 
 public class HipPairDistanceTest
 {
@@ -16,11 +20,14 @@ public class HipPairDistanceTest
   @Test
   public void ValidateJsonInputAssertIdHipCenter()
   {
+
     // Arrange
+    inputsList = new ArrayList<Object>();
+
     ParseFileToJson parse = new ParseFileToJson("long_trace.json");
 
     HipPairDistance prop = new HipPairDistance(2f);
-    prop.ReconnectToGetEventId();
+    prop.ReconnectToTrim();
 
     Connector.connect(parse, prop);
 
@@ -31,37 +38,22 @@ public class HipPairDistanceTest
     Print p = new Print().setSeparator("\n\n");
     Connector.connect(activator, p);
 
-    //creating jsonlist
-
-    double xAxis = 87.22969184462295;
-    double yAxis = 241.80033059322645;
-    double zAxis = -217.02861872450953;
-
-    JsonList point = new JsonList();
-    point.add(xAxis);
-    point.add(yAxis);
-    point.add(zAxis);
-
-    JsonMap a = new JsonMap();
-
-    a.put("id", "HipCenter");
-    a.put("time", -6.2135683761E10);
-    a.put("point", point  );
-
+    String a = "[87.22969184462295,241.80033059322645,-217.02861872450953]";
     //Act
     activator.run();
-    Object b = HipPairDistance.MyDerivation.inputsList.get(3);
+    Object b = inputsList.get(3);
 
     //Assert
-    Assert.assertEquals( b.toString(), a.toString());
+    Assert.assertEquals( a , b.toString());
 
 
   }
 
   @Test
-  public void toto()
+  public void ValidateJsonElementTypePostFilter_AssertHipCenter()
   {
     // Arrange
+    inputsList = new ArrayList<Object>();
     ParseFileToJson parse = new ParseFileToJson("long_trace.json");
 
     HipPairDistance prop = new HipPairDistance(2f);
@@ -95,7 +87,7 @@ public class HipPairDistanceTest
 
     //Act
     activator.run();
-    Object b = HipPairDistance.MyDerivation.inputsList.get(3);
+    Object b = inputsList.get(3);
 
     //Assert
     Assert.assertEquals( b.toString(), a.toString());

@@ -30,9 +30,10 @@ public class HipPairDistance extends GroupProcessor
 
   private static String s_idValue = "HipCenter";
 
+  /*
+   * Derivator used for unit testing
+   */
   private MyDerivation derivator;
-
-
 
   /*
    *   The first fork used to filter only the relevant events in the log file
@@ -152,8 +153,8 @@ public class HipPairDistance extends GroupProcessor
 
   public void ReconnectToTrim()
   {
-    Connector.connect(m_baseFilter, derivator);
-    Connector.connect (derivator, m_compareFork);
+    Connector.connect(m_compareTrim, derivator);
+    Connector.connect (derivator, 0, m_hipDistance, 1);
 
   }
 
