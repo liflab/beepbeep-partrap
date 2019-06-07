@@ -9,8 +9,8 @@ import ca.uqac.lif.cep.util.Booleans;
 import ca.uqac.lif.json.JsonElement;
 import ca.uqac.lif.json.JsonNull;
 import ca.uqac.lif.json.JsonNumber;
-import utilityFeatures.EqualsJsonString;
-import utilityFeatures.GetJsonFields;
+import utilityfeatures.EqualsJsonString;
+import utilityfeatures.GetJsonFields;
 import ca.uqac.lif.cep.functions.Constant;
 
 /**
