@@ -1,5 +1,3 @@
-package properties;
-
 import ca.uqac.lif.cep.Connector;
 import ca.uqac.lif.cep.io.Print;
 import ca.uqac.lif.cep.tmf.Pump;
@@ -7,16 +5,10 @@ import ca.uqac.lif.json.JsonList;
 import ca.uqac.lif.json.JsonMap;
 import org.junit.Assert;
 import org.junit.Test;
-
-
 import properties.HipPairDistance;
 import utilityfeatures.ParseFileToJson;
-import org.junit.Assert;
-import java.util.ArrayList;
 
 import java.util.ArrayList;
-
-import static org.junit.Assert.*;
 
 
 public class HipPairDistanceTest
@@ -59,7 +51,7 @@ public class HipPairDistanceTest
   public void ValidateJsonElementTypePostFilter_AssertHipCenter()
   {
     // Arrange
-    inputsList = new ArrayList<Object>();
+    HipPairDistance.MyDerivation.inputsList = new ArrayList<Object>();
     ParseFileToJson parse = new ParseFileToJson("long_trace.json");
 
     HipPairDistance prop = new HipPairDistance(2f);
@@ -93,7 +85,7 @@ public class HipPairDistanceTest
 
     //Act
     activator.run();
-    Object b = inputsList.get(3);
+    Object b =  HipPairDistance.MyDerivation.inputsList.get(3);
 
     //Assert
     Assert.assertEquals( b.toString(), a.toString());

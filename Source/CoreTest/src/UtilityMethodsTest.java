@@ -5,9 +5,6 @@ import utilityfeatures.UtilityMethods;
 public class UtilityMethodsTest
 {
 
-    public void tearDown()
-    {
-    }
 
     @Test
     public void testDistanceProcessingEqualValuesAssert0()
