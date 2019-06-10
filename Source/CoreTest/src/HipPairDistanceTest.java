@@ -55,7 +55,7 @@ public class HipPairDistanceTest
     ParseFileToJson parse = new ParseFileToJson("long_trace.json");
 
     HipPairDistance prop = new HipPairDistance(2f);
-    prop.ReconnectToTrim();
+    prop.ReconnectToGetEventId();
 
     Connector.connect(parse, prop);
 
@@ -66,12 +66,29 @@ public class HipPairDistanceTest
     Print p = new Print().setSeparator("\n\n");
     Connector.connect(activator, p);
 
+    //creating jsonlist
+
+    double xAxis = 87.22969184462295;
+    double yAxis = 241.80033059322645;
+    double zAxis = -217.02861872450953;
+
+    JsonList point = new JsonList();
+    point.add(xAxis);
+    point.add(yAxis);
+    point.add(zAxis);
+
+    JsonMap a = new JsonMap();
+
+    a.put("id", "HipCenter");
+    a.put("time", -6.2135683761E10);
+    a.put("point", point  );
+
     //Act
     activator.run();
     Object b =  HipPairDistance.MyDerivation.inputsList.get(3);
 
     //Assert
-    Assert.assertEquals( b.toString(), b.toString());
+    Assert.assertEquals( b.toString(), a.toString());
 
 
   }
