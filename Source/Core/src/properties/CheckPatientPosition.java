@@ -2,6 +2,9 @@ package properties;
 
 import ca.uqac.lif.cep.Connector;
 import ca.uqac.lif.cep.GroupProcessor;
+import ca.uqac.lif.cep.ProcessorException;
+import ca.uqac.lif.cep.Pushable;
+import ca.uqac.lif.cep.diagnostics.Derivation;
 import ca.uqac.lif.cep.functions.ApplyFunction;
 import ca.uqac.lif.cep.functions.BinaryFunction;
 import ca.uqac.lif.cep.functions.Constant;
@@ -15,16 +18,26 @@ import utilityfeatures.EqualsJsonString;
 import utilityfeatures.GetJsonFields;
 import utilityfeatures.UtilityMethods;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
+
 /**
  * This class allows to verify the fourth property of the project
  * (refer to the pdf included in the project):
  *      absence_of set ( HipCenter hc , KneeCenter kc ) where dist ( hc . point , kc . point ) <= d
  * It take JsonElements and give a Boolean
- * @author Helloïs BARBOSA
+ * @author Hello?s BARBOSA
  *
  */
 public class CheckPatientPosition extends GroupProcessor
 {
+
+
+  /**
+   * Derivator used for unit testing
+   */
+  private MyDerivation m_derivator;
 
   /**
    * The Fork to split stream in two parts: one to filter HipCenter
@@ -125,6 +138,7 @@ public class CheckPatientPosition extends GroupProcessor
   {
     super(1, 1);
 
+    m_derivator = new MyDerivation();
     m_firstFork = new Fork(2);
 
     //First branch of the m_firstFork (output: 0): here we check that the event id is HipCenter
@@ -198,12 +212,26 @@ public class CheckPatientPosition extends GroupProcessor
     this.associateInput(0,  m_firstFork, 0);
     this.associateOutput(0, m_checkHipAndKneePoints, 0);
   }
+
+  public void ReconnectAfterGetKneeCenterPoint()
+  {
+    Connector.connect(m_getKneeCenterPoint, m_derivator);
+    Connector.connect(m_derivator, 0, m_checkHipAndKneePoints, 1);
+
+  }
+
+  public void ReconnectAfterGetHipCenterPoint()
+  {
+    Connector.connect(m_getHipCenterPoint, m_derivator);
+    Connector.connect(m_derivator, m_checkHipAndKneePoints);
+
+  }
   
   /**
    * This inner class is a BinaryFunction that it take a two JsonElement
    * (meaning two JsonList of 3D points)and give Boolean
    * (with d the distance between the two 3D points: d > m_minHipKneeDist)
-   * @author Helloïs BARBOSA
+   * @author Hello?s BARBOSA
    *
    */
   private class CheckHipAndKneePoints extends BinaryFunction<JsonElement, JsonElement, Boolean>
@@ -254,6 +282,36 @@ public class CheckPatientPosition extends GroupProcessor
       return false;
     }
     
+  }
+
+  public static class MyDerivation extends Derivation
+  {
+
+    public static List<Object> inputsList = new ArrayList<Object>();
+
+    @Override
+    protected boolean compute(Object[] inputs, Queue<Object[]> outputs) throws ProcessorException {
+      Pushable[] var6;
+
+      inputsList.add(inputs[0]);
+
+      int var5 = (var6 = this.m_pushables).length;
+
+      for(int var4 = 0; var4 < var5; ++var4) {
+        Pushable p = var6[var4];
+        p.push(inputs[0]);
+      }
+
+      outputs.add(inputs);
+      if (this.m_slowDown > 0L) {
+        try {
+          Thread.sleep(this.m_slowDown);
+        } catch (InterruptedException var7) {
+        }
+      }
+
+      return true;
+    }
   }
   
 }

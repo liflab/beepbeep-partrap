@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="200b42a4-07a9-4fe0-8202-cd91de4a1ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/Core/src/customProcessors/distanceCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Core/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Core/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Core/src/utilityFeatures/GetJsonFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Core/src/utilityFeatures/GetJsonFields.java" afterDir="false" />
+    <list default="true" id="0f8d3314-1442-42d7-9b15-5317f82f7037" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/CoreTest/src/CheckPatientPositionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/JarFiles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/JarFiles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Core/Core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Core/Core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Core/src/properties/CheckPatientPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Core/src/properties/CheckPatientPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Core/src/properties/HipPairDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Core/src/utilityfeatures/GetJsonFields.java" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Core/src/utilityfeatures/GetJsonFields.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,69 +21,34 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/Source/Core/src/Main.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1">
-                    <caret line="16" column="24" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="24" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Core/src/hipDistance/HipDistance.java">
+        <entry file="file://$PROJECT_DIR$/Source/Core/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="34">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Source/Core/src/customProcessors/distanceCalculator.java">
+        <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/CheckPatientPositionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="82" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
+            <state relative-caret-position="496">
+              <caret line="35" column="79" selection-start-line="35" selection-start-column="79" selection-end-line="35" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#254#255#0" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
-                <element signature="e#367#368#0" expanded="true" />
-                <element signature="e#394#395#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Core/src/utilityFeatures/GetJsonFields.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="53" column="39" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,9 +56,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Source/Core/src/Main.java" />
-        <option value="$PROJECT_DIR$/Source/Core/src/utilityFeatures/GetJsonFields.java" />
-        <option value="$PROJECT_DIR$/Source/Core/src/customProcessors/distanceCalculator.java" />
+        <option value="$PROJECT_DIR$/Source/CoreTest/src/CheckPatientPositionTest.java" />
       </list>
     </option>
   </component>
@@ -101,8 +72,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,19 +90,22 @@
               <item name="beepbeep-partrap" type="b2602c69:ProjectViewProjectNode" />
               <item name="Core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="customProcessors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="beepbeep-partrap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hipDistance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="beepbeep-partrap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="properties" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beepbeep-partrap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utilityfeatures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beepbeep-partrap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoreTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beepbeep-partrap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoreTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -140,7 +114,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558103984153" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -154,27 +132,63 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Core" />
+  <component name="RunManager" selected="JUnit.CheckPatientPositionTest.ValidateHipCenterPoint">
+    <configuration name="CheckPatientPositionTest.ValidateHipCenterPoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoreTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CheckPatientPositionTest" />
+      <option name="METHOD_NAME" value="ValidateHipCenterPoint" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CheckPatientPositionTest.ValidateJsonInputAssertIdHipCenter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoreTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CheckPatientPositionTest" />
+      <option name="METHOD_NAME" value="ValidateJsonInputAssertIdHipCenter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CheckPatientPositionTest.ValidateHipCenterPoint" />
+        <item itemvalue="JUnit.CheckPatientPositionTest.ValidateJsonInputAssertIdHipCenter" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="200b42a4-07a9-4fe0-8202-cd91de4a1ab8" name="Default Changelist" comment="" />
-      <created>1558100225457</created>
+      <changelist id="0f8d3314-1442-42d7-9b15-5317f82f7037" name="Default Changelist" comment="" />
+      <created>1560345559129</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1558100225457</updated>
+      <updated>1560345559129</updated>
     </task>
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="CheckPatientPositionTest_ValidateJsonInputAssertIdHipCenter - 2019.06.12 at 09h 21m 09s.xml">
+      <configuration name="CheckPatientPositionTest.ValidateJsonInputAssertIdHipCenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckPatientPositionTest_ValidateJsonInputAssertIdHipCenter - 2019.06.12 at 09h 22m 23s.xml">
+      <configuration name="CheckPatientPositionTest.ValidateJsonInputAssertIdHipCenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckPatientPositionTest_ValidateJsonInputAssertIdHipCenter - 2019.06.12 at 09h 22m 26s.xml">
+      <configuration name="CheckPatientPositionTest.ValidateJsonInputAssertIdHipCenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckPatientPositionTest_ValidateJsonInputAssertIdHipCenter - 2019.06.12 at 09h 23m 41s.xml">
+      <configuration name="CheckPatientPositionTest.ValidateJsonInputAssertIdHipCenter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckPatientPositionTest_ValidateJsonInputAssertIdHipCenter - 2019.06.12 at 09h 23m 58s.xml">
+      <configuration name="CheckPatientPositionTest.ValidateJsonInputAssertIdHipCenter" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -208,60 +222,46 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Source/Core/src/customProcessors/distanceCalculator.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Source/Core/src/hipDistance/HipDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Core/src/utilityFeatures/EqualsJsonString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Core/src/utilityFeatures/GetJsonFields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="53" column="39" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/Core/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="34">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Core/src/customProcessors/distanceCalculator.java">
+    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/CheckPatientPositionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="82" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
+        <state relative-caret-position="85">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/CoreTest/src/CheckPatientPositionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="35" column="79" selection-start-line="35" selection-start-column="79" selection-end-line="35" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

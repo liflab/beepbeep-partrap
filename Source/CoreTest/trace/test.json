@@ -1,0 +1,6 @@
+{"state": "mainCasp.TrackingConnection.TrackersConnection", "id": "EnterState", "time": 1447204747.464}, {"ty": "F", "id": "TrackerDetected", "time": 1447204811.253}, {"patate": "alelpcz"}
+{"types": ["P", "F", "T", "G"], "id": "SearchTrackers", "time": 1447204747.464}
+{"ty": "P", "id": "TrackerDetected", "time": 1447204783.859}
+{"ty": "T", "id": "TrackerDetected", "time": 1447204798.046}
+{"ty": "G", "id": "TrackerDetected", "time": 1447204806.166}
+ {"ty": "F", "id": "TrackerDetected", "time": 1447204811.253}
