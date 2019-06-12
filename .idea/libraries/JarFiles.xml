@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/JarFiles/json.jar!/" />
       <root url="jar://$PROJECT_DIR$/JarFiles/beepbeep-3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JarFiles/diagnostics.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

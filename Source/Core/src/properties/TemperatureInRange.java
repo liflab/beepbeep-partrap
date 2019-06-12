@@ -2,6 +2,9 @@ package properties;
 
 import ca.uqac.lif.cep.Connector;
 import ca.uqac.lif.cep.GroupProcessor;
+import ca.uqac.lif.cep.ProcessorException;
+import ca.uqac.lif.cep.Pushable;
+import ca.uqac.lif.cep.diagnostics.Derivation;
 import ca.uqac.lif.cep.functions.ApplyFunction;
 import ca.uqac.lif.cep.functions.BinaryFunction;
 import ca.uqac.lif.cep.functions.Constant;
@@ -13,6 +16,10 @@ import ca.uqac.lif.json.JsonNumber;
 import utilityfeatures.EqualsJsonString;
 import utilityfeatures.GetJsonFields;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
+
 
 /**
  * 
@@ -21,11 +28,16 @@ import utilityfeatures.GetJsonFields;
  *          absence_of Temp t where not ( a <= t . t1 and t . t1 < b)
  *          
  * It take JsonElements and give a Boolean
- * @author Helloïs BARBOSA
+ * @author Hello?s BARBOSA
  *
  */
 public class TemperatureInRange extends GroupProcessor
 {
+  /**
+   *  The derivator used for unit tests
+   */
+  private MyDerivation derivator;
+
 
   /**
    * The Fork to split stream in two parts
@@ -87,6 +99,8 @@ public class TemperatureInRange extends GroupProcessor
   {
     super(1, 1);
 
+    derivator = new MyDerivation();
+
     m_fork = new Fork(2);
 
 
@@ -131,7 +145,7 @@ public class TemperatureInRange extends GroupProcessor
    * This inner class is a BinaryFunction that it take a Float[]
    * (meaning a range of two value: [a, b]) and a JsonElement correspond
    * to the temperature (x) value and give a Boolean (a <= x < b)
-   * @author Helloïs BARBOSA
+   * @author Hello?s BARBOSA
    *
    */
   private class IsBetween extends BinaryFunction<Float[], JsonElement, Boolean>
@@ -158,6 +172,56 @@ public class TemperatureInRange extends GroupProcessor
       return false;
     }
 
+  }
+
+  public void ReconnectAfterEqualId()
+  {
+    Connector.connect(m_equalId, derivator);
+    Connector.connect(derivator, m_logicAnd);
+
+  }
+
+  public void ReconnctAfterGetThemperature()
+  {
+    Connector.connect(m_getTemperature, derivator);
+    Connector.connect(derivator, 0,  m_checkIsBetween, 0);
+
+  }
+
+
+  public static class MyDerivation extends Derivation
+  {
+
+    public static List<Object> inputsList = new ArrayList<Object>();
+
+    @Override
+    protected boolean compute(Object[] inputs, Queue<Object[]> outputs) throws ProcessorException
+    {
+      Pushable[] var6;
+
+      if (inputs[0] != null)
+      {
+        inputsList.add(inputs[0]);
+      }
+
+
+      int var5 = (var6 = this.m_pushables).length;
+
+      for(int var4 = 0; var4 < var5; ++var4) {
+        Pushable p = var6[var4];
+        p.push(inputs[0]);
+      }
+
+      outputs.add(inputs);
+      if (this.m_slowDown > 0L) {
+        try {
+          Thread.sleep(this.m_slowDown);
+        } catch (InterruptedException var7) {
+        }
+      }
+
+      return true;
+    }
   }
   
 }

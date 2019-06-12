@@ -9,5 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="JarFiles" level="project" />
+    <orderEntry type="module" module-name="Core" />
   </component>
 </module>
