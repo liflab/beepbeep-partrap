@@ -60,3 +60,5 @@ jacoco.exec
 
 # Don't version data files
 trace_anylogic*.csv
+
+\.idea/workspace\.xml
